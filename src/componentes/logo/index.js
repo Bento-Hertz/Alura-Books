@@ -7,7 +7,7 @@ function Logo() {
             <img src={logo} alt='logo' className='logo-img'></img>
             <p><span className='negrito'>Alura</span>Books</p>
         </div>
-    )
+    );
 }
 
 export default Logo;
