@@ -21,7 +21,7 @@ function OpcoesHeader() {
     return (
         <Opcoes>
           { textoOpcoes.map( (texto) => (
-            <Opcoes><p>{texto}</p></Opcoes>
+            <Opcao><p>{texto}</p></Opcao>
           ))}
         </Opcoes>
     );
