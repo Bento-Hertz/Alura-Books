@@ -1,12 +1,24 @@
-import './estilo.css';
 import logo from '../../imagens/logo.svg';
+import styled from 'styled-components';
+
+const LogoContainer = styled.div`
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+`
+const LogoImg = styled.img`
+    margin-right: 10px;
+`
+const Negrito = styled.span`
+    font-weight: bold;
+`
 
 function Logo() {
     return (
-        <div className='logo'>
-            <img src={logo} alt='logo' className='logo-img'></img>
-            <p><span className='negrito'>Alura</span>Books</p>
-        </div>
+        <LogoContainer>
+            <LogoImg src={logo} alt='logo'></LogoImg>
+            <p><Negrito>Alura</Negrito>Books</p>
+        </LogoContainer>
     );
 }
 
