@@ -1,18 +1,19 @@
 import Header from './componentes/Header';
-import Pesquisa from './componentes/Pesquisa';
+import Body from './componentes/Body';
 import styled from 'styled-components';
 
 const AppContainer = styled.div`
   width: 100vw;
-  height: 100vh;
-  background-image: linear-gradient(90deg, #002F52 35%, #326589 165%);
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr;
 `
 
 function App() {
   return (
     <AppContainer>
       <Header />
-      <Pesquisa />
+      <Body />
     </AppContainer>
   );
 }
